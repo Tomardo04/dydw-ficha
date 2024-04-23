@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    width: 86vw;
+    height: 100hw;
+    background-color: #333333;
+}
+@font-face {
+    font-family: KronaOne;
+    src: url(media/KronaOne-Regular.ttf);
+}
+.header {
+    position: absolute;
+    width: 86vw;
+    height: 100px;
+    padding: 0 8%;
+    background-color: #252525;
+}
+.header-nav {
+    margin-top: 5vh;
+    text-align: center;
+    align-content: baseline;
+    justify-content: center;
+    font-family: 'KronaOne';
+    font-size: larger;
+    color: white;
+    text-align: baseline;
+}
+.body-content {
+    padding-top: 110px;
+}
+.body-content ul {
+    display: flex;
+    margin: 0 0;
+}
+
+.body-content ul li img{
+    width: 500px;
+    height: auto;
+}
+.body-content ul li{
+    padding: 10vh 1vw;
+    text-align: center;
+    align-content: baseline;
+    justify-content: center;
+    font-family: 'KronaOne';
+    font-size: medium;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.footer {
+    width: 100%;
+    height: 110px;
+    padding: 0 8%;
+    position: relative;
+    background: #252525;
+    align-content: center;
+}
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.clickable-link:hover {
+    color: rgb(136, 136, 136);
+}
+@media (max-width: 900px){
+    .body-content ul {
+        flex-direction: column;
+    }
+    .body-content ul li {
+        font-size: larger;
+        line-height: 40px;
+    }
+    .body-content ul li img {
+        width: 80vw;
+    }
+    .footer {
+        margin-top: 5vh;
+    }
+    .footer-nav img{
+        width: 30vw;
+        height: auto;
+    }
+}
+@media (min-width: 900px){
+    .body-content ul {
+        display: flex;
+    }
+    .body-content ul li {
+        text-align: left;
+        line-height: 30px;
+    }
+    .footer-nav img{
+        width: 100px;
+        height: auto;
+    }
+}
