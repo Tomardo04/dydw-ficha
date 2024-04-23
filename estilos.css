@@ -61,9 +61,6 @@ body {
     align-items: center;
     justify-content: space-evenly;
 }
-.clickable-link:hover {
-    color: rgb(136, 136, 136);
-}
 @media (max-width: 900px){
     .body-content ul {
         flex-direction: column;
